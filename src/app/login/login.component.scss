@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4169E1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.exemple-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+mat-card-title {
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Email
+// Password
+.example-container {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// Button
+.example-button-row button,
+.example-button-row a {
+    margin-right: 8px;
+}
+
+.example-img {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
