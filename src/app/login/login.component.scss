@@ -17,13 +17,12 @@ body {
     flex-direction: column;
 }
 
-mat-card-title {
-    color: #666;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+// mat-card-title {
+//     color: #666;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 // Email
 // Password
 .example-container {
@@ -35,9 +34,10 @@ mat-card-title {
 }
 
 // Button
-.example-button-row button,
-.example-button-row a {
-    margin-right: 8px;
+.example-button-row {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .example-img {

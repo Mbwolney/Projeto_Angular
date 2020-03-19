@@ -15,7 +15,7 @@
         <mat-card-header class="example-container">
             <mat-form-field appearance="fill">
                 <mat-label>Email</mat-label>
-                <input matInput [formControl]="emailFormControl" placeholder="Ex. admin@example.com">
+                <input [(ngModel)]="usuario.email" matInput [formControl]="emailFormControl" placeholder="Ex. admin@example.com">
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                     Please enter a valid email address
                 </mat-error>
@@ -29,7 +29,7 @@
         <mat-card-header class="example-container">
             <mat-form-field appearance="fill">
                 <mat-label>Senha</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'">
+                <input [(ngModel)]="usuario.senha" matInput [type]="hide ? 'password' : 'text'">
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
       <mat-icon color="primary">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
@@ -37,7 +37,7 @@
         </mat-card-header>
 
         <mat-card-header class="example-button-row">
-            <button (click)="Enviar()" mat-raised-button color="primary">Enviar</button>
+            <button (click)="enviar()" mat-raised-button color="primary">Enviar</button>
         </mat-card-header>
 
     </mat-card>
